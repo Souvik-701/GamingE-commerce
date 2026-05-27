@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Currency Dropdown</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./Asstes/style.css" />
+</head>
+
+<body>
+
+    <header class="header">
+
+        <!-- SOCIAL MEDIA -->
+        <div class="socialmedia">
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div>
+
+        <!-- WELCOME -->
+        <div class="welcome">
+            <p>Welcome to our store</p>
+        </div>
+
+        <!-- DROPDOWN WRAPPER -->
+        <div class="dropdown-wrapper">
+
+            <!-- CURRENCY DROPDOWN -->
+            <div class="dropdown">
+
+                <button class="dropdown-btn">
+                    Select Currency
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="dropdown-content">
+
+                    <div>Afghan Afghani (AFN)</div>
+                    <div>Euro (EUR)</div>
+                    <div>British Pound (GBP)</div>
+                    <div>Japanese Yen (JPY)</div>
+                    <div>Indian Rupee (INR)</div>
+                    <div>Chinese Yuan (CNY)</div>
+                    <div>Australian Dollar (AUD)</div>
+                    <div>Canadian Dollar (CAD)</div>
+                    <div>Swiss Franc (CHF)</div>
+                    <div>New Zealand Dollar (NZD)</div>
+                    <div>South African Rand (ZAR)</div>
+                    <div>Brazilian Real (BRL)</div>
+                    <div>Russian Ruble (RUB)</div>
+                    <div>United States Dollar (USD)</div>
+                    <div>Mexican Peso (MXN)</div>
+                    <div>Singapore Dollar (SGD)</div>
+                    <div>Hong Kong Dollar (HKD)</div>
+                    <div>Swedish Krona (SEK)</div>
+                    <div>Norwegian Krone (NOK)</div>
+
+                </div>
+
+            </div>
+
+            <!-- LANGUAGE DROPDOWN -->
+            <div class="dropdown">
+
+                <button class="dropdown-btn">
+                    Select Language
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="dropdown-content">
+
+                    <div>English</div>
+                    <div>Spanish</div>
+                    <div>French</div>
+                    <div>German</div>
+                    <div>Japanese</div>
+                    <div>Chinese</div>
+                    <div>Hindi</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="./Asstes/images/suruchi-logo_160x@2x.avif" alt="Suruchi Logo" /></a>
+        </div>
+        <div class="navi">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li id="shop"><a href="#">Shop<i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Laptops</a></li>
+                        <li><a href="#">Smartphones</a></li>
+                        <li><a href="#">Tablets</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Gaming</a></li>
+                        <li><a href="#">Wearables</a></li>
+                        <li><a href="#">Audio</a></li>
+                        <li><a href="#">Cameras</a></li>
+                        <li><a href="#">Smart Home</a></li>
+                        <li><a href="#">Office Equipment</a></li>
+                        <li> <a href="#">Mouse</a></li>
+                        <li><a href="#">Keyboards</a></li>
+                        <li><a href="#">Monitors</a></li>
+                        <li><a href="#">Printers</a></li>
+                    </ul>
+                </li>
+                <li id="About_Us"><a href="#">About Us<i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </li>
+                <li id="Contact"><a href="#">Contact<i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="header-icons">
+            <input type="text" placeholder="Search..." class="search-input">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-user"></i>
+
+            <div class="cart-icon" onclick="openCart()">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="hero">
+        <div class="hero_banner">
+            <div class="hero_top">
+                <div class="hero_top_left">
+                    <div class="hero_top_left_image_container">
+                        <a href="#"><img src="./Asstes/images/1.webp" alt="Hero Banner" /></a>
+                    </div>
+                    <div class="hero_top_left_text_container">
+                        <div class="hero_top_left_image_text">
+                            <p>Watch Wearable Device </p>
+                            <p>Which can vary depending on the brand and model electronic devices</p>
+                        </div>
+                        <div class="hero_top_left_btn">
+                            <button>Shop Now<a href="#"><i class="fa-solid fa-arrow-right"></i></a></button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="hero_top_right">
+                    <div class="hero_topright_top">
+                        <div class="hero_topright_top_image_container">
+                            <img src="./Asstes/images/3_d8b498cd-bbca-40ec-a42d-280b485fb91a.avif" alt="hero image2">
+                        </div>
+                        <div class="hero_topright_to_image_text">
+                            <p>Special Discout UP TO 50% OFF</p>
+                            <p><a href="#">Shop Now</a></p>
+                        </div>
+                    </div>
+                    <div class="hero_topright_bottom">
+                        <div class="hero_topright_bottom_image_container">
+                            <img src="./Asstes/images/4_47ca1fa7-ee5e-4e29-b9ff-5df81e07e87c.avif" alt="hero image3">
+                        </div>
+                        <div class="hero_topright_bottom_image_text">
+                            <p>Hot Deals UP TO 30% OFF</p>
+                            <p><a href="#">Shop Now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero_bottom">
+                <div class="hero_bottomleft">
+                    <div class="hero_bottomleft_image_container">
+                        <img src="./Asstes/images/Gaming_pc.avif" alt="hero image 4">
+                    </div>
+                    <div class="hero_bottomleft_image_text">
+                        <p>Hero Camera</p>
+                        <p><a href="#">SHOW NOW</a></p>
+                    </div>
+                </div>
+                <div class="hero_bottom_middle">
+                    <div class="hero_bottom_middle_image_container">
+                        <img src="./Asstes/images/ipad.avif" alt="hero image 5">
+                    </div>
+                    <div class="hero_bottom_middle_image_text">
+                        <p>Apple iPad</p>
+                        <p><a href="#">SHOW NOW</a></p>
+                    </div>
+                </div>
+                <div class="hero_bottomright">
+                    <div class="hero_bottomright_image_container">
+                        <img src="./Asstes/images/Smart_watch_ab4c738f-94be-4278-9b3c-95c7fc0e2845.avif" alt="hero image 6">
+                    </div>
+                    <div class="hero_bottomright_image_text">
+                        <p>Smart Watch</p>
+                        <p><a href="#">SHOW NOW</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="Best_Selling">
+        <div class="container">
+            <h2>Best Selling Products</h2>
+
+            <div class="Best_Collection">
+                <div class="hot_deals">
+                    <div class="hot_deals_image_container">
+                        <a href="#"><img src="./Asstes/images/Hot_Collection_360x.webp" alt="Hot Deals"></a>
+                    </div>
+                    <div class="hot_deals_text">
+                        <h2>Hot Collection</h2>
+                        <p>Pair text with an image to focus on your choosen product,collection or blog post</p>
+                        <p><a href="#">Shop Now</a><i class="fa-solid fa-arrow-right"></i></p>
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="product_card">
+                        <div class="product_image_container">
+                            <a href="#"><img src="./Asstes/images/applewatch.webp" alt="Product 1"></a>
+                        </div>
+                        <div class="product_info">
+                            <p>Tough Apple Watch</p>
+                            <p>$145.00</p>
+                        </div>
+                    </div>
+                    <div class="product_card">
+                        <div class="product_image_container">
+                            <a href="#"><img src="./Asstes/images/camera.webp" alt="Product 2"></a>
+                            <span id="discount">-18%</span>
+                        </div>
+                        <div class="product_info">
+                            <p>Go Pro Hero Camera</p>
+                            <p><del>$280.00</del> <strong>$230.00</strong></p>
+                            <p>
+                                <span class="gold-star">&#9733;</span>
+                                <span class="gold-star">&#9733;</span>
+                                <span class="gold-star">&#9733;</span>
+                                <span class="gold-star">&#9733;</span>
+                                <span class="gold-star">&#9733;</span> 1 review
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product_card">
+                        <div class="product_image_container">
+                            <a href="#"><img src="./Asstes/images/macbook.webp" alt="Product 3"></a>
+
+                        </div>
+                        <div class="product_info">
+                            <p>Abstract MacBook</p>
+                            <p><strong>$890.00</strong></p>
+                            <p>
+                                <span class="gold-star">&#9733;</span>
+                                <span class="gold-star">&#9733;</span>
+                                <span class="gold-star">&#9733;</span>
+                                <span class="gold-star">&#9733;</span>
+                                <span class="gold-star">&#9733;</span> 2 reviews
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product_card">
+                        <div class="product_image_container">
+                            <a href="#"><img src="./Asstes/images/mouse.webp" alt="Product 4"></a>
+                            <span id="discount">-17%</span>
+                        </div>
+                        <div class="product_info">
+                            <p>Wireless Computer Mouse</p>
+                            <p><del>$180.00</del> <strong>$150.00</strong></p>
+                            <p>
+                                <span class="gold-star">&#9733;</span>
+                                <span class="gold-star">&#9733;</span>
+                                <span class="gold-star">&#9733;</span>
+                                <span class="gold-star">&#9733;</span>
+                                <span class="gold-star">&#9733;</span> 1 review
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product_card">
+                        <div class="product_image_container">
+                            <a href="#"><img src="./Asstes/images/speaker.webp" alt="Product 5"></a>
+                        </div>
+                        <div class="product_info">
+                            <p>Mevo Live Camera</p>
+                            <p><strong>$160.00</strong></p>
+                            <p>
+                                <span class="gold-star">&#9733;</span>
+                                <span class="gold-star">&#9733;</span>
+                                <span class="gold-star">&#9733;</span>
+                                <span class="gold-star">&#9733;</span>
+                                <span class="gold-star">&#9733;</span> 1 review
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product_card">
+                        <div class="product_image_container">
+                            <a href="#"><img src="./Asstes/images/desktop.webp" alt="Product 6"></a>
+                            <span id="discount">-27%</span>
+                        </div>
+                        <div class="product_info">
+                            <p>HP 251 Desktop</p>
+                            <p><del>$300.00</del> <strong>$220.00</strong></p>
+                            <p>
+                                <span class="gold-star">&#9733;</span>
+                                <span class="gold-star">&#9733;</span>
+                                <span class="gold-star">&#9733;</span>
+                                <span class="gold-star">&#9733;</span>
+                                <span class="gold-star">&#9733;</span> 1 review
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Trending">
+        <div class="Trending_cotainer">
+            <h2>Trending This Week</h2>
+            <div class="Trending_products">
+                <div class="Trending_product_card">
+                    <div class="Trending_product_image_container">
+                        <a href="#"><img src="./Asstes/images/s20Fe.webp" alt="Trending Product 1"></a>
+                    </div>
+                    <div class="Trending_product_info">
+                        <p>Samsung Galaxy S21 FE</p>
+                        <p> <strong>$290.00</strong></p>
+                        <p>
+                            <span class="gold-star">&#9733;</span>
+                            <span class="gold-star">&#9733;</span>
+                            <span class="gold-star">&#9733;</span>
+                            <span class="gold-star">&#9733;</span>
+                            <span class="gold-star">&#9733;</span> 1 review
+                        </p>
+                    </div>
+                </div>
+                <div class="Trending_product_card">
+                    <div class="Trending_product_image_container">
+                        <a href="#"><img src="./Asstes/images/iphone.webp" alt="Trending Product 2"></a>
+                        <span id="Trending_discount">-8%</span>
+                    </div>
+                    <div class="Trending_product_info">
+                        <p>Samsung Galaxy S23 Ultra</p>
+                        <p><del>$255.00</del> <strong>$235.00</strong></p>
+                        <p>
+                            <span class="gold-star">&#9733;</span>
+                            <span class="gold-star">&#9733;</span>
+                            <span class="gold-star">&#9733;</span>
+                            <span class="gold-star">&#9733;</span>
+                            <span class="gold-star">&#9733;</span> 1 review
+                        </p>
+                    </div>
+                </div>
+                <div class="Trending_product_card">
+                    <div class="Trending_product_image_container">
+                        <a href="#"><img src="./Asstes/images/s21ultra.webp" alt="Trending Product 3"></a>
+                    </div>
+                    <div class="Trending_product_info">
+                        <p>Samsung Galaxy S21 Ultra</p>
+                        <p><strong>$230.00</strong></p>
+                        <p>
+                            <span class="gold-star">&#9733;</span>
+                            <span class="gold-star">&#9733;</span>
+                            <span class="gold-star">&#9733;</span>
+                            <span class="gold-star">&#9733;</span>
+                            <span class="gold-star">&#9733;</span> 2 reviews
+                        </p>
+                    </div>
+                </div>
+                <div class="Trending_product_card">
+                    <div class="Trending_product_image_container">
+                        <a href="#"><img src="./Asstes/images/huwaei.webp" alt="Trending Product 4"></a>
+                        <span id="Trending_discount">-21%</span>
+                    </div>
+                    <div class="Trending_product_info">
+                        <p>Huawei P40 Pro Phone</p>
+                        <p><del>$280.00</del><strong>$230.00</strong></p>
+                        <p>
+                            <span class="gold-star">&#9733;</span>
+                            <span class="gold-star">&#9733;</span>
+                            <span class="gold-star">&#9733;</span>
+                            <span class="gold-star">&#9733;</span>
+                            <span class="gold-star">&#9733;</span> 1 review
+                        </p>
+                    </div>
+                </div>
+                <div class="Trending_product_card">
+                    <div class="Trending_product_image_container">
+                        <a href="#"><img src="./Asstes/images/iphone12pro.webp" alt="Trending Product 5"></a>
+                        <span id="Trending_discount">-56%</span>
+                    </div>
+                    <div class="Trending_product_info">
+                        <p>iPhone 12 Pro Max</p>
+                        <p><del>$270.00</del><strong>$120.00</strong></p>
+                        <p>
+                            <span class="gold-star">&#9733;</span>
+                            <span class="gold-star">&#9733;</span>
+                            <span class="gold-star">&#9733;</span>
+                            <span class="gold-star">&#9733;</span>
+                            <span class="gold-star">&#9733;</span> 2 reviews
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="discount">
+        <div class="discount_container">
+            <div class="discount_container_left">
+                <div class="discount_container_left_image_container">
+                    <a href="#"><img src="./Asstes/images/audiospeaker.webp" alt="Discount1"></a>
+                </div>
+                <div class="discount_container_left_text">
+                    <p>Up to 75% Off</p>
+                    <h2>Unbeatable Discounts</h2>
+                    <a href="#">Shop Now</a><i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="discount_container_right">
+                <div class="discount_container_left_image_container">
+                    <a href="#"><img src="./Asstes/images/applemac.webp" alt="Discount2"></a>
+                </div>
+                <div class="discount_container_right_text">
+                    <p>Hurry UP! On Sale</p>
+                    <h2>Massive Fashion Sale</h2>
+                    <a href="#">Shop Now</a><i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Best_Deals">
+        <div class="Best_Deals_container">
+            <div class="Best_Deals_header">
+                <div class="Best_Deals_header_left">
+                    <h2>Best Deals</h2>
+                </div>
+                <div class="Best_Deals_header_right">
+                    <p>Hurry up! Offer ends in:
+                        <span id="countdown">-514</span>
+                        <span id="countdown">-10</span>
+                        <span id="countdown">-17</span>
+                        <span id="countdown">-32</span></p>
+                </div>
+            </div>
+
+            <div class="Best_Deals_products">
+                <div class="Best_Deals_product_card">
+                    <div class="Best_Deals_product_card_left">
+                        <div class="Best_Deals_product_image_left_container">
+                            <a href="#"><img src="./Asstes/images/BestDeals.webp" alt="Best Deal 1"></a>
+                        </div>
+                        <div class="Best_Deals_product_card_left_info">
+                            <h2>Hot Deals</h2>
+                            <p>Pair text with an image to focus on your chosen product,collection, or blog post.</p>
+                            <button>Shop Now<a href="#"><i class="fa-solid fa-arrow-right"></i></a></button>
+                        </div>
+                    </div>
+                    <div class="Best_Deals_product_card_right">
+                        <div class="Best_Deals_product_card_right_top">
+                            <div class="Best_Deals_product_card_right_top_cards">
+                                <div class="top_cards_image">
+                                    <a href="#"><img src="./Asstes/images/skynight.webp" alt="Best Deal 2"></a>
+                                    <span id="Best_Deals_discount">-29%</span>
+                                </div>
+                                <div class="top_cards_info">
+                                    <p>Sky Night Airpods</p>
+                                    <p><del>$175.00</del><strong>$125.00</strong></p>
+                                    <p>
+                                        <span class="gold-star">&#9733;</span>
+                                        <span class="gold-star">&#9733;</span>
+                                        <span class="gold-star">&#9733;</span>
+                                        <span class="gold-star">&#9733;</span>
+                                        <span class="gold-star">&#9733;</span> 1 review
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="Best_Deals_product_card_right_top_cards">
+                                <div class="top_cards_image">
+                                    <a href="#"><img src="./Asstes/images/Lavender.webp" alt="Best Deal 3"></a>
+                                    <span id="Best_Deals_discount">Sold Out</span>
+                                </div>
+                                <div class="top_cards_info">
+                                    <p>Sky Night Airpods</p>
+                                    <p><del>$175.00</del><strong>$125.00</strong></p>
+                                    <p>
+                                        <span class="gold-star">&#9733;</span>
+                                        <span class="gold-star">&#9733;</span>
+                                        <span class="gold-star">&#9733;</span>
+                                        <span class="gold-star">&#9733;</span>
+                                        <span class="gold-star">&#9733;</span> 1 review
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="Best_Deals_product_card_right_top_cards">
+                                <div class="top_cards_image">
+                                    <a href="#"><img src="./Asstes/images/xbox.webp" alt="Best Deal 4"></a>
+
+                                </div>
+                                <div class="top_cards_info">
+                                    <p>Xbox Controller S</p>
+                                    <p><strong>$155.00</strong></p>
+                                    <p>
+                                        <span class="gold-star">&#9733;</span>
+                                        <span class="gold-star">&#9733;</span>
+                                        <span class="gold-star">&#9733;</span>
+                                        <span class="gold-star">&#9733;</span>
+                                        <span class="gold-star">&#9733;</span> 2 reviews
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="Best_Deals_product_card_right_top_cards">
+                                <div class="top_cards_image">
+                                    <a href="#"><img src="./Asstes/images/echo.webp" alt="Best Deal 5"></a>
+                                    <span id="Best_Deals_discount">-33%</span>
+                                </div>
+                                <div class="top_cards_info">
+                                    <p>Amazon 3rd Speaker</p>
+                                    <p><del>$180.00</del><strong>$120.00</strong></p>
+                                    <p>
+                                        <span class="gold-star">&#9733;</span>
+                                        <span class="gold-star">&#9733;</span>
+                                        <span class="gold-star">&#9733;</span>
+                                        <span class="gold-star">&#9733;</span>
+                                        <span class="gold-star">&#9733;</span> 1 review
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Best_Deals_product_image_container">
+                        <a href="#"><img src="./Asstes/images/airpods.webp" alt="Best Deal 1"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
