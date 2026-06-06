@@ -1,0 +1,129 @@
+.discount {
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: 80px;
+}
+
+.discount .discount_container {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.discount_container .discount_container_left {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.discount_container_left .discount_container_left_image_container {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.discount_container_left .discount_container_left_image_container img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.discount_container_left .discount_container_left_text {
+    position: absolute;
+    top: 20%;
+    left: 30px;
+    color: var(--secondary-color);
+    width: 350px;
+    line-height: 1.5;
+}
+
+.discount_container_left .discount_container_left_text h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.discount_container_left .discount_container_left_text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    opacity: 0.6;
+    font-weight: 500;
+}
+
+.discount_container_left .discount_container_left_text a {
+    color: var(--secondary-color);
+    font-size: 20px;
+    text-decoration: underline;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.discount_container .discount_container_right {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.discount_container_right .discount_container_right_image_container {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.discount_container_right .discount_container_right_image_container img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.discount_container_right .discount_container_right_text {
+    position: absolute;
+    top: 20%;
+    left: 30px;
+    color: var(--secondary-color);
+    width: 350px;
+    line-height: 1.5;
+}
+
+.discount_container_right .discount_container_right_text h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.discount_container_right .discount_container_right_text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    opacity: 0.6;
+    font-weight: 500;
+}
+
+.discount_container_right .discount_container_right_text a {
+    color: var(--secondary-color);
+    font-size: 20px;
+    text-decoration: underline;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.discount_container .discount_container_right:hover a {
+    color: #1466b7
+}
+
+.discount_container .discount_container_left:hover a {
+    color: #1466b7
+}
+
+.discount_container .discount_container_right:hover img {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.discount_container .discount_container_left:hover img {
+    transform: scale(1.05);
+    transition: 0.3s;
+}

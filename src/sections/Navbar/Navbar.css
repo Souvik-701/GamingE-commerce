@@ -1,0 +1,112 @@
+.navbar {
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+
+.navbar .logo a {
+    text-decoration: none;
+}
+
+.navbar .logo img {
+    width: 160px;
+    cursor: pointer;
+}
+
+.navbar .navi ul {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .navi ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar .navi ul li a:hover {
+    color: var(--primary-color);
+}
+
+.navbar .navi ul li {
+    list-style: none;
+}
+
+.navbar .header-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.header-icons .search-input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 200px;
+}
+
+.header-icons .search-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(48, 48, 48, 0);
+}
+
+.header-icons .cart-icon {
+    position: relative;
+}
+
+.header-icons .cart-icon #cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navi li .dropdown-menu {
+    display: none;
+    height: 400px;
+    overflow-y: hidden;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+}
+
+.navi li:hover .dropdown-menu {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    background-color: var(--secondary-color);
+    padding: 10px 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+    left: 0;
+}
+
+.navi .dropdown-menu li {
+    list-style: none;
+    padding: 8px 20px;
+}
+
+.navi .dropdown-menu li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
